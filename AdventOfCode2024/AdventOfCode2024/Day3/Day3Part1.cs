@@ -11,14 +11,14 @@ public static partial class Day3Part1
     {
         Input input = Input.GetFromFile();
 
-        IReadOnlyList<MultiplicationInstruction> multiplicationInstructions = ParseMultiplicationInstructions(input);
+        List<MultiplicationInstruction> multiplicationInstructions = ParseMultiplicationInstructions(input);
         
         int result = multiplicationInstructions.Sum(instruction => instruction.Result());
         
         Console.WriteLine(result);
     }
 
-    private static IReadOnlyList<MultiplicationInstruction> ParseMultiplicationInstructions(Input input)
+    private static List<MultiplicationInstruction> ParseMultiplicationInstructions(Input input)
     {
         MatchCollection multiplicationMatches = MultiplicationRegex().Matches(input.Instructions);
         
