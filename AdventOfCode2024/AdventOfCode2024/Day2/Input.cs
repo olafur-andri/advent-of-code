@@ -26,4 +26,6 @@ public record Report(IReadOnlyList<Level> Levels);
 public record struct Level(int Value)
 {
     public static implicit operator int(Level level) => level.Value;
+
+    public static implicit operator Level(int level) => new(level);
 }
