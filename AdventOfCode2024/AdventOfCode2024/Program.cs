@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using AdventOfCode2024.Day4;
+using AdventOfCode2024.Day5;
 
-Day4Part2.Run(@"Day4\input.txt");
+Day5Part2.Run(@"Day5\input.txt");
